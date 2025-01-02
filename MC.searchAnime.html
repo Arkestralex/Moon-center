@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" >
+    <title>Moon Center SearchAnime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        body {
+          background: #121212;
+          color: #e0e0e0;
+          font-family: Arial, sans-serif;
+        }
+        .banner {
+          background-image: url('e0bc85d1b772019c8b7861006d36617f.gif');
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 125px;
+          pointer-events: none;
+          user-select: none;
+        }
+        .input-big {
+          width: 200px;
+          height: 10px;
+          font-size: 18px;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        .contenedor {
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+        }
+        footer {
+          background-color: #1f1f1f;
+          text-align: center;
+          padding: 1rem 0;
+          border-top: 1px solid #333;
+        }
+        footer p {
+            margin: 0;
+            color: #757575;
+        }
+    </style>
+    <body>
+      <div class="banner"></div>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <div class="logo">
+            <h1>Moon Center Anime</h1>
+        </div>
+    </head>
+    <div class="contenedor">
+      <label for="pages" style="height: 40px;">Qué anime buscas?</label>
+      <input list="pages" id="pageInput" name="pages" class="input-big">
+      <datalist id="pages">
+        <option value="">
+        <option value="">
+        <option value="">
+        <option value="">
+        <option value="">
+        <option value="">
+        <option value="">
+        <option value="">
+      </datalist>
+    </div>
+      <footer>
+        <p>&copy; 2024 Moon Center, All rights reserved.</p>
+            <p>Developed by Walterex©</p>
+      </footer>
+    </body>
+
+<script>
+  document.getElementById('pageInput').addEventListener('input', function() {
+    const page = this.value;
+    let url;
+
+    switch(page.toLowerCase()) {
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      case '':
+        url = '';
+        break;
+      default:
+        return;
+    }
+
+    window.location.href = url;
+  });
+</script>
+<br>
+    </body>
+</html>
